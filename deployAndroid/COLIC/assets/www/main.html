@@ -1,0 +1,572 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.2.css"> 
+    <link rel="stylesheet" href="css/linggaloveneny.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+    <style>
+    .ui-block-a img {
+        width  : 60%;
+        height : auto;
+    }
+     .ui-block-b img {
+        width  : 60%;
+        height : auto;
+    }
+      .ui-block-c img {
+        width  : 60%;
+        height : auto;
+    }
+     
+      .ikonsLogoMap img {
+        width  : 100%;
+        height : auto;
+    }
+     
+    .ikonsLogoCover img {
+        width  : 100%;
+        height : auto;
+    }
+
+    </style>
+
+        <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+ 
+
+
+</head>
+<body >
+	<!-- Main Menu Page -->
+<div data-role="page" id="pageone" data-theme="d"> 
+    <center>
+         <div class="ikonsLogoCover">
+                 <div id="owl-demo" class="owl-carousel owl-theme">
+                      <div class="item"><img src="img/cover/fullimage1.jpg" alt="1"></div>
+                      <div class="item"><img src="img/cover/fullimage2.jpg" alt="2"></div>
+                      <div class="item"><img src="img/cover/fullimage3.jpg" alt="3"></div>
+                      <div class="item"><img src="img/cover/fullimage4.jpg" alt="4"></div>
+                </div>
+         </div>
+         <div class="ui-grid-a">
+            <div class="ui-block-a">
+              &nbsp;
+            </div>   
+            <div class="ui-block-b">
+               &nbsp;
+            </div>   
+            <div class="ui-block-a">
+              &nbsp;
+            </div>   
+            <div class="ui-block-b">
+               &nbsp;
+            </div>   
+            <div class="ui-block-a">
+                <a  href="#pagetwo" data-transition="slide">
+                    <img src="img/icon/start.png" alt="start" >
+                </a>
+            </div>   
+            <div class="ui-block-b">
+                <a href="#pageinfo" data-transition="slide">
+                     <img src="img/icon/info_negara.png" alt="info negara">
+                </a>
+            </div>    
+            <div class="ui-block-a">
+              &nbsp;
+            </div>   
+            <div class="ui-block-b">
+               &nbsp;
+            </div>   
+            <div class="ui-block-a">
+                 <a  href="#pageabout" data-transition="slide">
+                      <img src="img/icon/about.png" alt="about">
+                </a>
+            </div>  
+            <div class="ui-block-b">
+                <a  href="#pagecontact" data-transition="slide">
+                          <img src="img/icon/contactUS.png" alt="exit" >
+                </a>
+            </div> 
+        </div>
+        </center>
+</div>
+
+    <!-- Main App 1 Page -->
+<div data-role="page" id="pagetwo" data-theme="d"  >
+    <div data-role="header" data-theme="a" data-transition="slide" data-fullscreen="true" data-position="fixed">
+        <a href="#pageone"  data-role="button" data-icon="home" >Home</a>
+    	<h1>Select Country</h1>
+    	
+    </div>
+    <div data-role="content">
+         <div data-role="fieldcontain">
+            <ul id="curnegara" data-role="listview" data-inset="true" >
+                <li data-role="divider" data-theme="b">Current Country</li>
+                <li id="countryFrom"  data-theme="d"></li>
+            </ul> <br>
+            <ul id= "imgs" data-role="listview" data-inset="true" data-theme="b" data-filter="true"  >
+                
+            </ul>
+        </div>
+    </div>
+     <div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+         <h1>&nbsp;</h1>
+    </div>
+</div>
+
+
+    <!-- field Page-->
+<div data-role="page" id="pagefield" data-add-back-btn="true" data-theme="d">
+     <div data-role="header" data-theme="a" data-fullscreen="true" data-position="fixed">
+        <h1>Form Data</h1>
+       
+    </div>
+    <div data-role="content" data-theme="d" style="padding: 10px;">
+        <br><br>
+        <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    &nbsp;&nbsp;&nbsp;<img src="img/icon/people.png" id="people_pic" />
+                </div>    
+                <div class="ui-block-b">
+                <fieldset>
+                    <select name="day" id="valOrang" data-theme="d" data-native-menu="false" >
+                        <option value="1" >1 person</option>
+                        <option value="2">2 person</option>
+                        <option value="3">3 person</option>
+                        <option value="4">4 person</option>
+                        <option value="5">5 person</option>
+                        <option value="6">6 person</option>
+                        <option value="7">7 person</option>
+                        <option value="8">8 person</option>
+                        <option value="9">9 person</option>
+                        <option value="10">10 person</option>
+                    </select> 
+                </fieldset>
+                </div>
+        </div>
+        <br>
+        <div class="ui-grid-a">
+                <div class="ui-block-a">
+                     &nbsp;&nbsp;&nbsp;<img src="img/icon/eat.png">
+                </div>    
+                <div class="ui-block-b">
+                    <fieldset>
+                        <select name="day" id="valMakan" data-theme="d" data-native-menu="false">
+                            <option value="1">1 X</option>
+                            <option value="2">2 X</option>
+                            <option value="3">3 X</option>
+                            <option value="4">4 X</option>
+                            <option value="5">5 X</option>
+                            <option value="6">6 X</option>
+                            <option value="7">7 X</option>
+                            <option value="8">8 X</option>
+                            <option value="9">9 X</option>
+                            <option value="10">10 X</option>
+                        </select>
+                    </fieldset>
+                </div>
+        </div>
+        <br>
+        <div class="ui-grid-a">
+                <div class="ui-block-a">
+                     &nbsp;&nbsp;&nbsp;<img src="img/icon/place.png">
+                </div>    
+                <div class="ui-block-b">
+                <fieldset>
+                    <select name="day" id="valPlace" data-theme="d" data-native-menu="false" >
+                        <option value="hotel">hotel</option>
+                        <option value="apartment">apartment</option>
+                        <option value="home">home</option>
+                    </select>
+                </fieldset>
+                </div>
+        </div>
+        <br>
+         <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    &nbsp;&nbsp;&nbsp;<img src="img/icon/trans.png">
+                </div>    
+                <div class="ui-block-b">
+                    <fieldset>
+                        <select name="day" id="valTransport" data-theme="d"  data-native-menu="false" >
+                            <option value="train"> by train</option>
+                            <option value="private">by private transportation</option>
+                            <option value="taxi">by taxi</option>
+                            <option value="bus">by bus</option>
+                            <option value="foot">by foot</option>
+                        </select>
+                    </fieldset>
+                </div>
+        </div>
+         <br>
+         <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    &nbsp;&nbsp;&nbsp;<img src="img/icon/other.png">
+                </div>    
+                <div class="ui-block-b">
+                  <input type="text" name="hargaLain" id="inputangka"  value="0">   
+                </div>
+        </div>
+        <br>
+         
+             <div class="ikonsLogoMap">
+                <a href="#pagemap" data-transition="slide" onclick="simpanFieldAll()">
+                    <center>&nbsp;&nbsp;<img src="img/icon/map.png" ></center>
+                </a>
+            </div>
+      
+        
+    </div>
+    <div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+         <h1>&nbsp;</h1>
+    </div>
+</div>
+
+<!-- map Page -->
+     <div data-role="page" id="pagemap" data-theme="a">
+        <div data-role="panel" id="mypanel" data-position="right" data-display="push" data-theme="c">
+            
+            <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>Your Position</h3>
+                    <p id="dari_text">nothing place selected</p>
+                    <a href="#" data-theme="b" data-role="button" onclick="getLocation2();" id="GPSButton">GPS</a>
+                    <a href="#" data-theme="b" data-role="button" onclick="makeTouch('dari')">Mark it</a>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Daily destiny</h3>
+                    <p id="tujuan_text">nothing place selected</p>
+                    <a href="#" data-theme="b" data-role="button" onclick="makeTouch('tujuan')">Mark it</a>
+                </div>
+            </div>
+            <a href="#" data-theme="e" data-role="button" onclick="BersihkanMarker();" class="ui-disabled" id="bersihkanButton">Clean Up</a>
+            <a href="#" data-theme="d" data-role="button" onclick="getDistance();">Get distance</a>
+            <a href="#pagekuesioner" data-theme="d" data-role="button"  class="ui-disabled" id="submitButton" data-transition="slide" onclick="totalTransCost();">Submit</a>
+        </div>
+       
+        <div data-role="content" style="padding: 0px;">
+            <div id="map_canvas" style="height: 100%;"></div>
+            <div style="position: absolute; bottom: 20px; right: 0;">
+                <a href="#mypanel" data-role="button" data-icon="flat-location" data-iconpos="notext" data-theme="b" style="width: 40px; height: 40px;">Location</a>
+            </div>
+        </div>
+        
+        <!-- /content -->
+    </div>
+
+<!-- kuesioner Page -->
+    <div data-role="page" id="pagekuesioner" data-add-back-btn="false">
+        <div data-role="header" data-theme="a" data-fullscreen="true" data-position="fixed">
+            <h1>Form Data</h1>
+            <a href="#pagehasil" data-role="button" data-icon="arrow-r" data-transition="slide" data-theme="a" class="ui-btn-right" onclick="saveAll()">Submit</a>
+        </div>
+        <div data-role="content" data-theme="b">
+             <div data-role="fieldcontain">
+                <h4>1. What kind of place you want to stay ?</h4>
+                <fieldset data-role="controlNav">
+                    <input type="radio" name="town_choice" id="town-choice-1" value="town" >
+                    <label for="town-choice-1">Town</label>
+                    <input type="radio" name="town_choice" id="town-choice-2" value="village" checked>
+                    <label for="town-choice-2">Village</label>
+                </fieldset>
+                <h4>2. How do you get water ?</h4>
+                <fieldset data-role="controlNav">
+                    <input type="radio" name="water_choice" id="water-choice-1" value="yes" >
+                    <label for="water-choice-1">By Purchase</label>
+                    <input type="radio" name="water_choice" id="water-choice-2" value="no" checked>
+                    <label for="water-choice-2">By Yourself</label>
+                </fieldset>
+                <h4>3. Do you often use laundry service ?</h4>
+                <fieldset data-role="controlNav">
+                    <input type="radio" name="laundry_choice" id="laundry-choice-1" value="yes" >
+                    <label for="laundry-choice-1">Yes</label>
+                    <input type="radio" name="laundry_choice" id="laundry-choice-2" value="no" checked>
+                    <label for="laundry-choice-2">No</label>
+                </fieldset>
+                <h4>4. Do you always cook food on a daily basis in addition to buying out?</h4>
+                <fieldset data-role="controlNav">
+                    <input type="radio" name="gas_choice" id="potion-choice-1" value="seldom" >
+                    <label for="potion-choice-1">Seldom</label>
+                    <input type="radio" name="gas_choice" id="potion-choice-2" value="sometime" checked>
+                    <label for="potion-choice-2">Sometimes</label>
+                    <input type="radio" name="gas_choice" id="potion-choice-3" value="often" >
+                    <label for="potion-choice-3">Often</label>
+                </fieldset>
+             </div>
+        </div>
+       <div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+         <h1>&nbsp;</h1>
+       </div>
+    </div>
+
+
+
+<!-- hasil Page -->
+    <div data-role="page" id="pagehasil" data-add-back-btn="false">
+        <div data-role="header" data-theme="a" data-fullscreen="true" data-position="fixed">
+            <h1>Calculation Result</h1>
+             <a href="#pageone"  data-role="button" data-icon="home" onclick="refreshPage('file:///android_asset/www/index.html');">Home</a>
+        </div>
+         <div data-role="content">
+            <div data-role="fieldcontain">
+                 <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                     <center>you need <strong><h1 id="totalRes">$ 00</h1></strong> per month </center>
+                    </div>
+               </div>
+               <br><br>
+                <div class="ui-grid-b">
+                     <div class="ui-block-a">
+                       <center><img src="img/icon/eat.png"><br>
+                       <strong><span  id="makanRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                     <div class="ui-block-b">
+                       <center><img src="img/icon/listrik.png"><br>
+                       <strong><span  id="listrikRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                     <div class="ui-block-c">
+                       <center><img src="img/icon/laundry.png"><br>
+                       <strong><span  id="laundryRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                      <div class="ui-block-a">
+                       <center><img src="img/icon/gas.png"><br>
+                       <strong><span  id="gasRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                     <div class="ui-block-b">
+                       <center><img src="img/icon/trans.png"><br>
+                       <strong><span  id="transRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                     <div class="ui-block-c">
+                       <center><img src="img/icon/airbersih.png"><br>
+                       <strong><span  id="airbRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                      <div class="ui-block-a">
+                       <center><img src="img/icon/airminum.png"><br>
+                       <strong><span  id="airmRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                     <div class="ui-block-b">
+                       <center><img src="img/icon/place.png"><br>
+                       <strong><span  id="placeRes">$ 00 </span></strong></center><br><br>
+                     </div>
+                     <div class="ui-block-c">
+                       <center><img src="img/icon/other.png"><br>
+                       <strong><span  id="otherRes">$ 00 </span></strong></center><br><br>
+                     </div>
+               </div>
+            </div>
+         </div>
+       <div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+         <h1>&nbsp;</h1>
+       </div>
+    </div>
+
+<!--About Page-->
+    <div data-role="page" id="pageabout" data-add-back-btn="true">
+        <div data-role="header" data-theme="a" data-transition="slide" data-fullscreen="false" data-position="fixed">
+            <a href="#pageone"  data-role="button" data-icon="home" >Home</a>
+            <h1>About</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="fieldcontain">
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>App Version </b></label>
+                     </div>
+                     <div class="ui-block-b"><label >: v1.0.0</label><img src="img/icon/logoz.png">
+                     </div>
+                </div><br>
+                 <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Info </b></label>
+                     </div>
+                     <div class="ui-block-b"><label >: colic is a mobile web application that can be used by an immigrant who wants to know the cost of living while staying in his destination country. Feel more responsive design and powerfull of beauty performance  </label>
+                     </div>
+                </div><br>
+                 <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Company </b></label>
+                     </div>
+                     <div class="ui-block-b"><img src="img/icon/company.png">
+                     </div>
+                </div><br>
+            </div>
+        </div>
+    <div data-role="footer" data-theme="a" data-position="fixed" >
+         <h1>&nbsp;</h1>
+    </div>
+    </div>
+<!-- Info Negara Page-->
+
+<div data-role="page" id="pageinfo" data-theme="d"  >
+    <div data-role="header" data-theme="a" data-transition="slide"  data-position="fixed">
+        <a href="#pageone"  data-role="button" data-icon="home" >Home</a>
+        <h1>Select Country</h1>
+    </div>
+    <div data-role="content" style="padding: 10px;">
+         <div data-role="fieldcontain">
+            <ul id= "imgsInfo" data-role="listview" data-inset="true" data-theme="b" data-filter="true" data-inset="true">
+                
+            </ul>
+        </div>
+    </div>
+     <div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+         <h1>&nbsp;</h1>
+    </div>
+</div>
+
+<!-- Info Negara Map Page-->
+
+<div data-role="page" id="pagemapinfo" data-theme="d"  >
+    <div data-role="header" data-theme="a" data-transition="slide" data-fullscreen="true" data-position="fixed">
+        <a href="#pageone"  data-role="button" data-icon="home" >Home</a>
+        <h1>Country Info</h1>
+    </div>
+   
+         <div id="map_canvasinfo" style="height: 500px;"></div><br>
+         <div data-role="content" style="padding: 10px;">
+            <div data-role="fieldcontain">
+                 <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Country Name</b></label>
+                     </div>
+                     <div class="ui-block-b"><label id="namaz"></label>
+                     </div><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Capital</b></label>
+                     </div>
+                     <div class="ui-block-b"><label id="ibukotaz"></label>
+                     </div><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Area</b></label>
+                     </div>
+                     <div class="ui-block-b"><label id="luasz"></label>
+                     </div><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Population</b></label>
+                     </div>
+                     <div class="ui-block-b"><label id="kepadatanz"></label>
+                     </div><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Currency</b></label>
+                     </div>
+                     <div class="ui-block-b"><label id="uangz"></label>
+                     </div><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Formal Language</b></label>
+                     </div>
+                     <div class="ui-block-b"><label id="bahasaz"></label>
+                     </div><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Flag</b></label>
+                     </div>
+                     <div class="ui-block-b"><img id="benderaz" src="" width="200px"; height="150px";>
+                     </div><br>
+                </div>
+            </div>
+         </div>
+    
+     <div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+         <h1>&nbsp;</h1>
+    </div>
+</div>
+
+<!--Contact US Page-->
+    <div data-role="page" id="pagecontact" data-add-back-btn="true">
+        <div data-role="header" data-theme="a" data-transition="slide" data-fullscreen="false" data-position="fixed">
+            <a href="#pageone"  data-role="button" data-icon="home" >Home</a>
+            <h1>Contact Us</h1>
+        </div>
+
+         <div data-role="content" style="padding: 10px;">
+            <div data-role="fieldcontain">
+                 <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Location</b></label>
+                     </div>
+                     <div class="ui-block-b"><div id="map_canvascontact" style="height: 200px;width :200px"></div>
+                     </div><br>
+                </div>
+                 <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ></label>
+                     </div>
+                     <div class="ui-block-b"><label >: JL. Gajayana No 304 P.O.BOX 669</label>
+                     </div><br><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Phone Toll Free</b></label>
+                     </div>
+                     <div class="ui-block-b"><label >: 111-9869-658746</label>
+                     </div><br><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Email</b></label>
+                     </div>
+                     <div class="ui-block-b"><label >: colic@mail.com</label><br><label >&nbsp;&nbsp;implement.runnable@mail.com</label><br><label >&nbsp;&nbsp;nesiviya@mail.com</label>
+                     </div><br><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Office Hours</b></label>
+                     </div>
+                     <div class="ui-block-b"><label >: 08.00 am - 12.00 noons</label><br><label >&nbsp;&nbsp;01.00 pm - 05.00 pm</label>
+                     </div><br><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Web Support</b></label>
+                     </div>
+                     <div class="ui-block-b"><label >: colic.allalla.com</label><br><label >&nbsp;&nbsp;liperkus.allalla.com</label><br><label>&nbsp;&nbsp;nesiviya.allalla.com</label>
+                     </div><br><br>
+                </div>
+                <div class="ui-grid-a">
+                     <div class="ui-block-a"><label ><b>Social Media</b></label>
+                     </div>
+                     <div class="ui-block-b">: <img src="img/icon/facebook.png" style="height: 16px;width:16px;"><label>&nbsp;Facebook    : colic_developer</label><br>&nbsp;&nbsp;<img src="img/icon/twitter.png" style="height: 16px; width:16px;"><label>&nbsp;Twitter     : @colic_community</label>
+                     </div><br>
+                </div>
+               
+            </div>
+         </div>
+    <div data-role="footer" data-theme="a" data-position="fixed" >
+         <h1>&nbsp;</h1>
+    </div>
+    </div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/aplikasi.js"></script>
+<script src="js/snow.js"></script>
+<script src="js/jquery.mobile-1.3.2.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="js/ui/min/jquery.ui.map.full.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/ui/jquery.ui.map.services.js"></script>
+
+
+     
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+     
+      $("#owl-demo").owlCarousel({
+     
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true,
+          autoPlay : 5000,
+          autoPlay :true
+          // "singleItem:true" is a shortcut for:
+          // items : 1, 
+          // itemsDesktop : false,
+          // itemsDesktopSmall : false,
+          // itemsTablet: false,
+          // itemsMobile : false
+     
+      });
+     
+    });
+</script>
+</body>
+</html>
